@@ -1,0 +1,54 @@
+.card {
+    background-color: #151518;
+    border-radius: 16px;
+    padding: 25px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 400px;
+    border: 0.5px solid rgb(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+.iconWrapper {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 0 var(--accent-color)); 
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+
+.description {
+  color: #949494;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}

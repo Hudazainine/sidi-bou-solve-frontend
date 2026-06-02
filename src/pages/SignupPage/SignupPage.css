@@ -1,0 +1,71 @@
+.SignupPage-container {
+    background: var(--white);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo-section {
+    position: sticky;
+    top: 0;           
+    height: 100vh;   
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue1);
+}
+
+.form-section {
+    
+    width: 60%;   
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: var(--blue1);
+    overflow-y: auto; 
+}
+
+
+form {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.password-condition{
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 20px;
+
+}
+
+.logo-section img {
+    height: 300px;
+    width: auto;
+    z-index: 10;
+
+}
+
+
+@media (max-width: 768px) {
+    .logo-section {
+        display: none;
+    }
+    .form-section {
+        width: 100%; 
+        padding: 40px 20px;
+        min-height: auto;   
+        
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+

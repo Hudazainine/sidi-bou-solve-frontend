@@ -1,0 +1,65 @@
+/* Your original code remains the same */
+.header-container {
+    background: url("../../assets/background.svg");
+    background-size: cover;
+    background-position: center; /* Added to keep the SVG centered */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 10%;
+    gap: 24px;
+}
+
+.header-container h1 {
+    font-size: 60px;
+}
+
+.header-container p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.headerbtnsection {
+    display: flex;
+    gap: 16px;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 5%; /* More space for content on small screens */
+    }
+
+    .header-container h1 {
+        font-size: 36px; /* Smaller title for mobile */
+    }
+
+    .header-container p {
+        font-size: 16px; /* Slightly smaller text */
+    }
+
+    .headerbtnsection {
+        flex-direction: column; /* Stack buttons vertically if they don't fit */
+        width: 100%;
+        align-items: center;
+    }
+
+    .headerbtnsection button, 
+    .headerbtnsection .btn { 
+        width: 100%; /* Optional: buttons take full width on mobile */
+        max-width: 300px;
+    }
+}

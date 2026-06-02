@@ -1,0 +1,160 @@
+.categorieSection {
+    background-color: var(--blue3);
+    color: white;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.categorieContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorieCards {
+    display: grid;
+    /* Fil desktop dima 3 columns */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+
+.featureSection {
+    background-color: var(--black);
+    color: white;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+
+/* --- Responsive Start (1100px) --- */
+
+@media (max-width: 1100px) {
+    .categorieCards {
+        /* Iwalliw 2 columns mel 1100px */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorieSection {
+        height: auto;
+    }
+
+    .categorieCards {
+        grid-template-columns: 1fr;
+        max-width: 400px; 
+    }
+}
+
+
+.teamSection {
+    background-color: var(--blue3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 10 ;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-10px);
+}
+.imgBox {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border: 3px solid var(--blue3); /* wala color light ken t7eb */
+    background: #eee;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}

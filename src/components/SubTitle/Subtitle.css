@@ -1,0 +1,10 @@
+.subtitle{
+    display: flex;
+    gap : 12px;
+    background: #161618;
+    padding : 6px 12px ;
+    border-radius: var(--radius);
+    color: white;
+    width: fit-content;
+    user-select: none;
+}

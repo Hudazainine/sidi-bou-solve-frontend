@@ -1,0 +1,35 @@
+button{
+    padding: 8px ;
+    border-radius: 50%;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    border: 1px solid var(--blue2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.2s;
+    background: white;
+    font-size: 16px;
+    white-space: nowrap;
+}
+button img{
+    height: 20px;
+    width: auto;
+}
+
+button:hover{
+    scale: 105%;
+}
+
+
+@media (max-width: 1000px) {
+    button{
+        font-size: 12px;
+        padding: auto auto ;
+    }
+
+}
